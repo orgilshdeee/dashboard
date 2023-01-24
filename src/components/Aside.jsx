@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./../styles/aside.css";
-import { asideMenu } from "./../util/data";
 
-function Aside() {
+function Aside({ asideMenu }) {
   const [current, setCurrent] = useState(0);
   const navigate = useNavigate();
   return (
